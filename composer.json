@@ -19,6 +19,14 @@
     "php": ">=5.4.0",
     "yiisoft/yii2": "~2.0.0"
   },
+  "require-dev": {
+    "paulzi/yii2-adjacency-list": "~1.0",
+    "paulzi/yii2-nested-sets": "~1.0",
+    "paulzi/yii2-nested-intervals": "~1.0",
+    "paulzi/yii2-materialized-path": "~1.0",
+    "phpunit/phpunit": "~4.0",
+    "phpunit/dbunit": "~1.0"
+  },
   "autoload": {
     "psr-4": {
       "paulzi\\autotree\\": ""

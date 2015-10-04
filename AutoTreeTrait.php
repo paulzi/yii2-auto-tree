@@ -164,7 +164,7 @@ trait AutoTreeTrait
      */
     public function getPrev()
     {
-        return $this->autoTreeCall('getPrev', ['ns', 'al', 'mp', 'ni']);
+        return $this->autoTreeCall('getPrev', ['ns', 'mp', 'ni', 'al']);
     }
 
     /**
@@ -173,7 +173,7 @@ trait AutoTreeTrait
      */
     public function getNext()
     {
-        return $this->autoTreeCall('getNext', ['ns', 'al', 'mp', 'ni']);
+        return $this->autoTreeCall('getNext', ['ns', 'mp', 'ni', 'al']);
     }
 
     /**
@@ -185,7 +185,7 @@ trait AutoTreeTrait
     }
 
     /**
-     * @param self $node
+     * @param \yii\db\BaseActiveRecord $node
      * @return bool
      */
     public function isChildOf($node)
@@ -202,7 +202,7 @@ trait AutoTreeTrait
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function makeRoot()
     {
@@ -210,8 +210,8 @@ trait AutoTreeTrait
     }
 
     /**
-     * @param self $node
-     * @return self
+     * @param \yii\db\BaseActiveRecord $node
+     * @return $this
      */
     public function prependTo($node)
     {
@@ -219,8 +219,8 @@ trait AutoTreeTrait
     }
 
     /**
-     * @param self $node
-     * @return self
+     * @param \yii\db\BaseActiveRecord $node
+     * @return $this
      */
     public function appendTo($node)
     {
@@ -228,8 +228,8 @@ trait AutoTreeTrait
     }
 
     /**
-     * @param self $node
-     * @return self
+     * @param \yii\db\BaseActiveRecord $node
+     * @return $this
      */
     public function insertBefore($node)
     {
@@ -237,8 +237,8 @@ trait AutoTreeTrait
     }
 
     /**
-     * @param self $node
-     * @return self
+     * @param \yii\db\BaseActiveRecord $node
+     * @return $this
      */
     public function insertAfter($node)
     {

@@ -4,7 +4,12 @@ Allow apply multiple tree behavior for ActiveRecord in Yii2.
 
 For selecting methods used by the most rapid behavior. For modifying methods - call all attached behaviors.
 
-If you are using the adjacency list for a get list of the parents or the descendants as relation will be used getParentsOrdered() or getDescendantsOrdered().  
+If you are using the adjacency list for a get list of the parents or the descendants as relation will be used getParentsOrdered() or getDescendantsOrdered().
+
+[![Packagist Version](https://img.shields.io/packagist/v/paulzi/yii2-auto-tree.svg)](https://packagist.org/packages/paulzi/yii2-auto-tree)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/paulzi/yii2-auto-tree/master.svg)](https://scrutinizer-ci.com/g/paulzi/yii2-auto-tree/?branch=master)
+[![Build Status](https://img.shields.io/travis/paulzi/yii2-auto-tree/master.svg)](https://travis-ci.org/paulzi/yii2-auto-tree)
+[![Total Downloads](https://img.shields.io/packagist/dt/paulzi/yii2-auto-tree.svg)](https://packagist.org/packages/paulzi/yii2-auto-tree)
 
 ## Install
 
