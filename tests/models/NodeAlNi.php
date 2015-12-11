@@ -7,7 +7,7 @@
 
 namespace paulzi\autotree\tests\models;
 
-use paulzi\adjacencylist\AdjacencyListBehavior;
+use paulzi\adjacencyList\AdjacencyListBehavior;
 use paulzi\nestedintervals\NestedIntervalsBehavior;
 use paulzi\autotree\AutoTreeTrait;
 
@@ -57,7 +57,7 @@ class NodeAlNi extends \yii\db\ActiveRecord
         return [
             [
                 'class'         => AdjacencyListBehavior::className(),
-                'sortAttribute' => null,
+                'sortable'      => false,
             ],
             [
                 'class'         => NestedIntervalsBehavior::className(),

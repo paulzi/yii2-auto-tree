@@ -20,9 +20,13 @@ trait AutoTreeTrait
     private static function autoTreeAliases()
     {
         return [
+            'paulzi\adjacencyList\AdjacencyListBehavior'       => 'al',
             'paulzi\adjacencylist\AdjacencyListBehavior'       => 'al',
+            'paulzi\nestedSets\NestedSetsBehavior'             => 'ns',
             'paulzi\nestedsets\NestedSetsBehavior'             => 'ns',
+            'paulzi\nestedIntervals\NestedIntervalsBehavior'   => 'ni',
             'paulzi\nestedintervals\NestedIntervalsBehavior'   => 'ni',
+            'paulzi\materializedPath\MaterializedPathBehavior' => 'mp',
             'paulzi\materializedpath\MaterializedPathBehavior' => 'mp',
         ];
     }
@@ -174,6 +178,16 @@ trait AutoTreeTrait
     public function getNext()
     {
         return $this->autoTreeCall('getNext', ['ns', 'mp', 'ni', 'al']);
+    }
+
+    /**
+     * Populate children relations for self and all descendants
+     * @param int $depth = null
+     * @return self
+     */
+    public function populateTree($depth = null)
+    {
+        return $this->autoTreeCall('getNext', ['ns', 'ni', 'mp', 'al'], [$depth]);
     }
 
     /**

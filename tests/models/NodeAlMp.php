@@ -7,8 +7,8 @@
 
 namespace paulzi\autotree\tests\models;
 
-use paulzi\adjacencylist\AdjacencyListBehavior;
-use paulzi\materializedpath\MaterializedPathBehavior;
+use paulzi\adjacencyList\AdjacencyListBehavior;
+use paulzi\materializedPath\MaterializedPathBehavior;
 use paulzi\autotree\AutoTreeTrait;
 
 /**
@@ -57,7 +57,7 @@ class NodeAlMp extends \yii\db\ActiveRecord
         return [
             [
                 'class'         => AdjacencyListBehavior::className(),
-                'sortAttribute' => null,
+                'sortable'      => false,
             ],
             [
                 'class'         => MaterializedPathBehavior::className(),

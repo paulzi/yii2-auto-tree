@@ -7,7 +7,7 @@
 
 namespace paulzi\autotree\tests\models;
 
-use paulzi\adjacencylist\AdjacencyListBehavior;
+use paulzi\adjacencyList\AdjacencyListBehavior;
 use paulzi\nestedsets\NestedSetsBehavior;
 use paulzi\autotree\AutoTreeTrait;
 
@@ -57,7 +57,7 @@ class NodeAlNs extends \yii\db\ActiveRecord
         return [
             [
                 'class'         => AdjacencyListBehavior::className(),
-                'sortAttribute' => null,
+                'sortable'      => false,
             ],
             [
                 'class'         => NestedSetsBehavior::className(),

@@ -7,7 +7,7 @@
 
 namespace paulzi\autotree\tests\models;
 
-use paulzi\adjacencylist\AdjacencyListQueryTrait;
+use paulzi\adjacencyList\AdjacencyListQueryTrait;
 
 /**
  * @author PaulZi <pavel.zimakoff@gmail.com>
