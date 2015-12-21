@@ -187,7 +187,7 @@ trait AutoTreeTrait
      */
     public function populateTree($depth = null)
     {
-        return $this->autoTreeCall('getNext', ['ns', 'ni', 'mp', 'al'], [$depth]);
+        return $this->autoTreeCall('populateTree', ['ns', 'ni', 'mp', 'al'], [$depth]);
     }
 
     /**
