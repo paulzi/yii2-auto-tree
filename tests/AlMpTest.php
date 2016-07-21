@@ -119,5 +119,6 @@ class AlMpTest extends AutoTreeTraitTestCase
     {
         $this->assertEquals(10, NodeAlMp::findOne(4)->deleteWithChildren());
         $this->assertEquals(null, NodeAlMp::findOne(24));
+        $this->assertEquals(15, NodeAlMp::findOne(1)->deleteWithChildren());
     }
 }

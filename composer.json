@@ -20,10 +20,10 @@
     "yiisoft/yii2": "~2.0.0"
   },
   "require-dev": {
-    "paulzi/yii2-adjacency-list": "~2.0",
-    "paulzi/yii2-nested-sets": "~1.0",
-    "paulzi/yii2-nested-intervals": "~1.0",
-    "paulzi/yii2-materialized-path": "~2.0",
+    "paulzi/yii2-adjacency-list": "^2.0.3",
+    "paulzi/yii2-nested-sets": "^1.0.4",
+    "paulzi/yii2-nested-intervals": "^1.0.5",
+    "paulzi/yii2-materialized-path": "^2.0.6",
     "phpunit/phpunit": "~4.0",
     "phpunit/dbunit": "~1.0"
   },

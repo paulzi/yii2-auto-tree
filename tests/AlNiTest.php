@@ -135,5 +135,6 @@ class AlNiTest extends AutoTreeTraitTestCase
     {
         $this->assertEquals(10, NodeAlNi::findOne(4)->deleteWithChildren());
         $this->assertEquals(null, NodeAlNi::findOne(24));
+        $this->assertEquals(15, NodeAlNi::findOne(1)->deleteWithChildren());
     }
 }

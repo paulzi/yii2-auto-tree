@@ -266,6 +266,8 @@ trait AutoTreeTrait
      */
     public function deleteWithChildren()
     {
-        return $this->autoTreeCall('deleteWithChildren', ['ns', 'ni', 'mp', 'ai']);
+        /** @var \yii\db\BaseActiveRecord|self $this */
+        $this->autoTreeCall('preDeleteWithChildren', ['ns', 'ni', 'mp', 'al'], [], false);
+        return $this->autoTreeCall('deleteWithChildren', ['ns', 'ni', 'mp', 'al']);
     }
 }
