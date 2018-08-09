@@ -183,11 +183,12 @@ trait AutoTreeTrait
     /**
      * Populate children relations for self and all descendants
      * @param int $depth = null
+     * @param string|array $with = null
      * @return self
      */
-    public function populateTree($depth = null)
+    public function populateTree($depth = null, $with = null)
     {
-        return $this->autoTreeCall('populateTree', ['ns', 'ni', 'mp', 'al'], [$depth]);
+        return $this->autoTreeCall('populateTree', ['ns', 'ni', 'mp', 'al'], [$depth, $with]);
     }
 
     /**
