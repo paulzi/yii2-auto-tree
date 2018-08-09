@@ -22,7 +22,7 @@ composer require paulzi/yii2-auto-tree
 or add
 
 ```bash
-"paulzi/yii2-auto-tree" : "^1.0"
+"paulzi/yii2-auto-tree" : "^1.1"
 ```
 
 to the `require` section of your `composer.json` file.
